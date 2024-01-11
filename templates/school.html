@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form
+        {
+            color: rgb(10, 53, 4);
+        }
+        input
+        {
+            background-color: aquamarine;
+        }
+        
+    </style>
+</head>
+<body>
+    <center>
+        <h1>Insert School Data</h1>
+        
+        <form action="" method="POST">
+            {% csrf_token %}
+            <label for="sn">School Name:</label>
+            <input type="text" name="sn" id="sn"><br><br>
+            <label for="sl">School Location:</label>
+            <input type="text" name="sl" id="sl"><br><br>
+            <label for="sp">School Principal:</label>
+            <input type="text" name="sp" id="sp"><br><br>
+            <input type="submit" value="click here">
+        </form>
+
+    </center>
+</body>
+</html>
